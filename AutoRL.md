@@ -47,7 +47,7 @@
 
 14. [*Neural architecture search with reinforcement learning* by Barret Zoph et al. in ICLR 2017](https://openreview.net/pdf?id=r1Ue8Hcxg): *RL-NAS*
 
-15. [Learning Transferable Architectures for Scalable Image Recognition, by Barret Zoph et al. in CVPR 2018](http://openaccess.thecvf.com/content_cvpr_2018/papers/Zoph_Learning_Transferable_Architectures_CVPR_2018_paper.pdf)
+15. [Learning Transferable Architectures for Scalable Image Recognition, by Barret Zoph et al. in CVPR 2018](http://openaccess.thecvf.com/content_cvpr_2018/papers/Zoph_Learning_Transferable_Architectures_CVPR_2018_paper.pdf)：block search space
 
     ------
 
@@ -78,4 +78,10 @@
 25. [*Evaluating the Search Phase of Neural Architecture Search*, by Christian Sciuto et al. in ArXiv 2019](https://arxiv.org/pdf/1902.08142.pdf): *Random search NAS*
 
 26. [Random Search and Reproducibility for Neural Architecture Search, by Liam Li et al. in ArXiv 2019](https://arxiv.org/abs/1902.07638)
+
+27. [Auto-DeepLab: Hierarchical Neural Architecture Search for Semantic Image Segmentation by Chenxi Liu and Li Fei-Fei et al. in ArXiv 2019](https://arxiv.org/abs/1901.02985v2)
+
+28. [NAS-FPN: Learning Scalable Feature Pyramid Architecture for Object Detection by Golnaz Ghiasi et al. in ArXiv 2019](https://arxiv.org/abs/1904.07392)
+
+29. [Single Path One-Shot Neural Architecture Search with Uniform Sampling by Zichao Guo et al. in ArXiv 2019](https://arxiv.org/abs/1904.00420)
 
