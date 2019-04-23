@@ -45,9 +45,9 @@
 
     
 
-14. [*Neural architecture search with reinforcement learning* by Barret Zoph et al. in ICLR 2017](https://openreview.net/pdf?id=r1Ue8Hcxg): *RL-NAS*
+14. [*Neural architecture search with reinforcement learning* by Barret Zoph et al. in ICLR 2017](https://openreview.net/pdf?id=r1Ue8Hcxg): *RL-NAS*. This paper proposes to compose network structure by using a recurrent neural network as the controller, which outputs a sequence of hyper parameters. The controller network makes use of auto-regressive nature of hyperparameter prediction conditioned on the previous search. Its parameter is trained by policy gradient to maxmize the validation accuracy.  Its performance is comparable with the best Dense-net performance on CIFAR-10 image classification dataset, and excels on Penn Treebank language modeling compared with variational LSTM. It also shows significant improvement with a RL trained controller compared with random generated networks.
 
-15. [Learning Transferable Architectures for Scalable Image Recognition, by Barret Zoph et al. in CVPR 2018](http://openaccess.thecvf.com/content_cvpr_2018/papers/Zoph_Learning_Transferable_Architectures_CVPR_2018_paper.pdf)：block search space
+15. [Learning Transferable Architectures for Scalable Image Recognition, by Barret Zoph et al. in CVPR 2018](http://openaccess.thecvf.com/content_cvpr_2018/papers/Zoph_Learning_Transferable_Architectures_CVPR_2018_paper.pdf)：block search space. The paper proposes to search for effictive architectures on small proxy dataset and then transfer the learned architecture to large dataset. The transferability is achieved via block-wise search space, which makes the architecture agnostic to the size of intput data and depth of the whole network. The search space is different from the whole network space, and thus has more ability to generalise to other problems.
 
     ------
 
