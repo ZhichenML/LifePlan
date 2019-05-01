@@ -125,7 +125,7 @@
 
     ------
 
-33. [Practical Block-wise Neural Network Architecture Generation, by Zhao Zhong et al. in CVPR 2018](http://openaccess.thecvf.com/content_cvpr_2018/papers/Zhong_Practical_Block-Wise_Neural_CVPR_2018_paper.pdf)
+33. [Practical Block-wise Neural Network Architecture Generation, by Zhao Zhong et al. in CVPR 2018](http://openaccess.thecvf.com/content_cvpr_2018/papers/Zhong_Practical_Block-Wise_Neural_CVPR_2018_paper.pdf) *transferable blocks* 
 
 34. [Searching for activation functions, by Prajit Ramachandran and Barret Zoph et al. in ArXiv 2017](https://arxiv.org/abs/1710.05941)
 
@@ -149,29 +149,55 @@
 
 44. [Efficient Architecture Search by Network Transformation, by Han Cai et al. in AAAI 2018](https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/viewFile/16755/16568): reuse network, combined with net2wider and net2deeper transformations, trained by policy gradient.
 
-45. [Hierarchical Representations for Efficient Architecture Search, by Hanxiao Liu et al. in ICLR 2018](https://openreview.net/forum?id=BJQRKzbA-)*Neuro-evolution*
+45. [Hierarchical Representations for Efficient Architecture Search, by Hanxiao Liu et al. in ICLR 2018](https://openreview.net/forum?id=BJQRKzbA-)*Neuro-evolution & transferable block*
 
     ------
 
-46. [Neural Architecture Optimization by Tieyan Liu et al. in NIPS 2018](https://papers.nips.cc/paper/8007-neural-architecture-optimization.pdf): *SGD-NAS*
+46. [SMASH: One-Shot Model Architecture Search through HyperNetworks, by Andrew Brock et al. in NIPS 2017](http://metalearning.ml/2017/papers/metalearn17_brock.pdf):*hyper-net generates network parameters*
 
-47. [MorphNet: Fast & Simple Resource-Constrained Structure Learning of Deep Networks, by Ariel Gordon et al. in CVPR 2018](https://arxiv.org/abs/1711.06798): *Efficient Flop aware optimizaiton*
+47. [Faster discovery of neural architectures by searching for paths in a large model, by Hieu Pham et al. in ICLR 2018](https://openreview.net/forum?id=ByQZjx-0-&noteId=rJWmCYxyM) * Efficient Neural Architecture Search*
 
-48. [Learning Time/Memory-Efficient Deep Architectures with Budgeted Super Networks, by Tom Veniat et al. in CVPR 2018](http://openaccess.thecvf.com/content_cvpr_2018/papers/Veniat_Learning_TimeMemory-Efficient_Deep_CVPR_2018_paper.pdf)
+48. [Population Based Training of Neural Networks, by Max Jaderberg et al. in Arxiv 2017](https://arxiv.org/abs/1711.09846): *parameter sharing*
 
-49. [*DARTS: Differentiable Architecture Search* by Hanxiao Liu et al. in ICLR 2019](https://openreview.net/forum?id=S1eYHoC5FX)
+49. [Neural Architecture Optimization by Tieyan Liu et al. in NIPS 2018](https://papers.nips.cc/paper/8007-neural-architecture-optimization.pdf): *SGD-NAS*
+
+50. [MorphNet: Fast & Simple Resource-Constrained Structure Learning of Deep Networks, by Ariel Gordon et al. in CVPR 2018](https://arxiv.org/abs/1711.06798): *Efficient Flop aware optimizaiton*, two-step training: resource constrained training to prone the network, retraining without resource constraint
+
+51. [Learning Time/Memory-Efficient Deep Architectures with Budgeted Super Networks, by Tom Veniat et al. in CVPR 2018](http://openaccess.thecvf.com/content_cvpr_2018/papers/Veniat_Learning_TimeMemory-Efficient_Deep_CVPR_2018_paper.pdf)
+
+52. [*DARTS: Differentiable Architecture Search* by Hanxiao Liu et al. in ICLR 2019](https://openreview.net/forum?id=S1eYHoC5FX)
 
     ------
 
-50. [*Evaluating the Search Phase of Neural Architecture Search*, by Christian Sciuto et al. in ArXiv 2019](https://arxiv.org/pdf/1902.08142.pdf): *Random search NAS*
+53. [*Evaluating the Search Phase of Neural Architecture Search*, by Christian Sciuto et al. in ArXiv 2019](https://arxiv.org/pdf/1902.08142.pdf): *Random search NAS*
 
-51. [Random Search and Reproducibility for Neural Architecture Search, by Liam Li et al. in ArXiv 2019](https://arxiv.org/abs/1902.07638)
+54. [Random Search and Reproducibility for Neural Architecture Search, by Liam Li et al. in ArXiv 2019](https://arxiv.org/abs/1902.07638)
 
-52. [Auto-DeepLab: Hierarchical Neural Architecture Search for Semantic Image Segmentation by Chenxi Liu and Li Fei-Fei et al. in ArXiv 2019](https://arxiv.org/abs/1901.02985v2)
+55. [Auto-DeepLab: Hierarchical Neural Architecture Search for Semantic Image Segmentation by Chenxi Liu and Li Fei-Fei et al. in ArXiv 2019](https://arxiv.org/abs/1901.02985v2)
 
-53. [NAS-FPN: Learning Scalable Feature Pyramid Architecture for Object Detection by Golnaz Ghiasi et al. in ArXiv 2019](https://arxiv.org/abs/1904.07392)
+56. [NAS-FPN: Learning Scalable Feature Pyramid Architecture for Object Detection by Golnaz Ghiasi et al. in ArXiv 2019](https://arxiv.org/abs/1904.07392)
 
-54. [Single Path One-Shot Neural Architecture Search with Uniform Sampling by Zichao Guo et al. in ArXiv 2019](https://arxiv.org/abs/1904.00420): *model and structure decouple*
+57. [Single Path One-Shot Neural Architecture Search with Uniform Sampling by Zichao Guo et al. in ArXiv 2019](https://arxiv.org/abs/1904.00420): *model and structure decouple*
 
-55. 
+58. [Path-Level Network Transformation for Efficient Architecture Search, by Han Cai, Song Han et al. in ICML 2018](http://proceedings.mlr.press/v80/cai18a/cai18a.pdf): it extends layer-wise network transformation to more advanced multi-branch network structure. It introduces branch split and emerge operations, which expoits REINFORCE algorithm to sample and train.
+
+59. [Searching for A Robust Neural Architecture in Four GPU Hours, by Xuanyi Dong and Yi Yang in CVPR 2019](https://xuanyidong.com/publication/cvpr-2019-gradient-based-diff-sampler/)
+
+60. [Understanding and Simplifying One-Shot Architecture Search, by Gabriel Bender et al. in ICML 2018](http://proceedings.mlr.press/v80/bender18a/bender18a.pdf): it combines a set of candidate architectures using weight sharing and trained by regularisation.
+
+61. [ProxylessNAS: Direct Neural Architecture Search on Target Task and Hardware, by Han Cai et al. in ICLR 2019](https://openreview.net/pdf?id=HylVB3AqYm)：like one-shot architecture search, it also employs an over-parameterised network that are composed of a set of potential architectures, and use binary gates to determine which one to use in evaluation as well as path-level pruning. The network is trained by gradient, instead of a meta-controller.
+
+62. [Graph HyperNetworks for Neural Architecture Search, by Chris Zhang et al. in ICLR 2019](https://arxiv.org/pdf/1810.05749.pdf)
+
+63. [Efficient Multi-objective Neural Architecture Search via Lamarckian Evolution, by Thomas Elsken et al in ICLR 2019](https://arxiv.org/abs/1804.09081)
+
+64. [Regularized Evolution for Image Classifier Architecture Search, by Esteban Rea et al. in AAAI 2019](https://arxiv.org/pdf/1802.01548.pdf)
+
+65. [Partial Order Pruning: for Best Speed/Accuracy Trade-off in Neural Architecture Search, by Xin Li et al. in CVPR 2019](https://arxiv.org/pdf/1903.03777.pdf)
+
+66. [SNAS: stochastic neural architecture search, by Sirui Xie et al. in ICLR 2019](https://openreview.net/pdf?id=rylqooRqK7)
+
+67. [FBNet: Hardware-Aware Efficient ConvNet Design via Differentiable Neural Architecture Search, by BIchen Wu et al. in CVPR 2019](https://arxiv.org/abs/1812.03443)
+
+68. [Reinforced Evolutionary Neural Architecture Search, by Yukang Chen et al. in CVPR 2019](https://arxiv.org/abs/1808.00193)
 
