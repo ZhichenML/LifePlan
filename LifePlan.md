@@ -13,6 +13,8 @@
 3. [Reinforcement Learning, Fast and Slow, by Matthew Botvinick et al. in Trends in Cognitive Science 2019](https://www.cell.com/action/showPdf?pii=S1364-6613%2819%2930061-0): *Episode RL and Meta RL*
 4. [RL2: Fast Reinforcement Learning via Slow Reinforcement Learning, by Yan Duan et al. in arXiv 2016](https://arxiv.org/abs/1611.02779):*Meta RL*
 5. [Learning to reinforcement learn, by Jane X Wang et al, in arXiv 2016](https://arxiv.org/abs/1611.05763)
+6. [Deep Reinforcement Learning that Matters by Peter Henderson et al. in AAAI 2018](https://arxiv.org/abs/1709.06560)
+7. Unobservable imitation learning
 
 ______
 
