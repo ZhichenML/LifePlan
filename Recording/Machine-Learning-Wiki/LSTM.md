@@ -1,7 +1,7 @@
 # Long Short-term Memory Unit
 ## Mechanism
 
-![](https://github.com/Scott-Alex/Machine-Learning-Wiki/blob/master/fig/LSTM.png)
+![](https://github.com/ZhichenML/LifePlan/blob/master/Recording/Machine-Learning-Wiki/fig/LSTM.png)
 
 Long short-term memory (LSTM) network is an appealing and powerful Recurrent neural network (RNN) paradigm. LSTM mitigates the gradient vanishing and exploding problems when training RNNs. This is achieved by replacing the original nonlinear hidden units with a linear cell unit, and additional three gates, i.e. the forget gate, the input gate and the output gate, which are parallel filters.
 
@@ -42,7 +42,7 @@ Then, we add the forget gate and the input gate to rescale the last cell state a
 ## Gated Recurrent Unit (GRU)
 GRU is a simplified LSTM. GRU uses the hidden state to replace the cell state and the hidden state in the LSTM. It also combines the forget gate and input gate so that they sum to be 1. Thereofore, only one value need to be determined, as shown in the follwing figure.
 
-![](https://github.com/Scott-Alex/Machine-Learning-Wiki/blob/master/fig/GRU.png)
+![](https://github.com/ZhichenML/LifePlan/blob/master/Recording/Machine-Learning-Wiki/fig/GRU.png)
 
 <!--r_{t}=\sigma(W_{r}[h_{t-1},x_{t}])-->
 <a href="https://www.codecogs.com/eqnedit.php?latex=r_{t}=\sigma(W_{r}[h_{t-1},x_{t}])" target="_blank"><img src="https://latex.codecogs.com/gif.latex?r_{t}=\sigma(W_{r}[h_{t-1},x_{t}])" title="r_{t}=\sigma(W_{r}[h_{t-1},x_{t}])" /></a>
@@ -146,7 +146,7 @@ Having got the derivative for the cell networks, we have to continue calculate t
 
 The following figure demonstrates the overall process. The input and output sequence both have 3 time points.
 
-![](https://github.com/Scott-Alex/Machine-Learning-Wiki/blob/master/fig/BPTT.png)
+![](https://github.com/ZhichenML/LifePlan/blob/master/Recording/Machine-Learning-Wiki/fig/BPTT.png)
 
 
 
