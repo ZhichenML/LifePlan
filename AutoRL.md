@@ -183,27 +183,29 @@
 
     ------
 
-59. [Efficient Neural Architecture Search via Parameter Sharing, by Barret Zoph et al. in ICML 2018](http://proceedings.mlr.press/v80/pham18a/pham18a.pdf)*Weight sharing*, it exploits weight sharing among candidate network to facilitate efficiency. The insight is implemented by restricting the search space to a subset of computational graph, and the weights within a repeatable operation nodes are shared across generated networks. The block weights and RL trained RNN controller weights alternatively.
+59. [A Flexible Approach to Automated RNN Architecture Generation, by Martin Schrimpf et al. in ICLR 2018](<https://openreview.net/forum?id=SkOb1Fl0Z>): *NAS for RNN*
 
-60. [*Evaluating the Search Phase of Neural Architecture Search*, by Christian Sciuto et al. in ArXiv 2019](https://arxiv.org/pdf/1902.08142.pdf): *Random search NAS*, it empirically demonstrates that weight sharing can negatively impact the architecture search phase, that ``the weights of the best architecture are biased by their use in other candidates'', and inturn bias the ranking of the best architecture.. Random sampled architectures are shown to has a competitive performance with DARTS, NAO, and ENAS.
+60. [Efficient Neural Architecture Search via Parameter Sharing, by Barret Zoph et al. in ICML 2018](http://proceedings.mlr.press/v80/pham18a/pham18a.pdf)*Weight sharing*, it exploits weight sharing among candidate network to facilitate efficiency. The insight is implemented by restricting the search space to a subset of computational graph, and the weights within a repeatable operation nodes are shared across generated networks. The block weights and RL trained RNN controller weights alternatively.
 
-61. [Random Search and Reproducibility for Neural Architecture Search, by Liam Li et al. in ArXiv 2019](https://arxiv.org/abs/1902.07638)
+61. [*Evaluating the Search Phase of Neural Architecture Search*, by Christian Sciuto et al. in ArXiv 2019](https://arxiv.org/pdf/1902.08142.pdf): *Random search NAS*, it empirically demonstrates that weight sharing can negatively impact the architecture search phase, that ``the weights of the best architecture are biased by their use in other candidates'', and inturn bias the ranking of the best architecture.. Random sampled architectures are shown to has a competitive performance with DARTS, NAO, and ENAS.
 
-62. [Auto-DeepLab: Hierarchical Neural Architecture Search for Semantic Image Segmentation by Chenxi Liu and Li Fei-Fei et al. in ArXiv 2019](https://arxiv.org/abs/1901.02985v2)
+62. [Random Search and Reproducibility for Neural Architecture Search, by Liam Li et al. in ArXiv 2019](https://arxiv.org/abs/1902.07638)
 
-63. [NAS-FPN: Learning Scalable Feature Pyramid Architecture for Object Detection by Golnaz Ghiasi et al. in ArXiv 2019](https://arxiv.org/abs/1904.07392)
+63. [Auto-DeepLab: Hierarchical Neural Architecture Search for Semantic Image Segmentation by Chenxi Liu and Li Fei-Fei et al. in ArXiv 2019](https://arxiv.org/abs/1901.02985v2)
 
-64. [Single Path One-Shot Neural Architecture Search with Uniform Sampling by Zichao Guo et al. in ArXiv 2019](https://arxiv.org/abs/1904.00420): *model and structure decouple*
+64. [NAS-FPN: Learning Scalable Feature Pyramid Architecture for Object Detection by Golnaz Ghiasi et al. in ArXiv 2019](https://arxiv.org/abs/1904.07392)
 
-65. [IRLAS: Inverse Reinforcement Learning for Architecture Search, by Minghao Guo et al. in arXiv 2018](https://arxiv.org/pdf/1812.05285.pdf): it proposes to leverage the existing well-performed mannally designed network topology in neural architecture search by inverse reinforcement learning. It is featured by extracting patterns from mannually designed network, and fit a linear projection as the reward. The optimization objective is a combination of accuracy and topology guidance.
+65. [Single Path One-Shot Neural Architecture Search with Uniform Sampling by Zichao Guo et al. in ArXiv 2019](https://arxiv.org/abs/1904.00420): *model and structure decouple*
 
-66. [Path-Level Network Transformation for Efficient Architecture Search, by Han Cai, Song Han et al. in ICML 2018](http://proceedings.mlr.press/v80/cai18a/cai18a.pdf): it extends layer-wise network transformation to more advanced multi-branch network structure. It introduces branch split and emerge operations, which expoits REINFORCE algorithm to sample and train.
+66. [IRLAS: Inverse Reinforcement Learning for Architecture Search, by Minghao Guo et al. in arXiv 2018](https://arxiv.org/pdf/1812.05285.pdf): it proposes to leverage the existing well-performed mannally designed network topology in neural architecture search by inverse reinforcement learning. It is featured by extracting patterns from mannually designed network, and fit a linear projection as the reward. The optimization objective is a combination of accuracy and topology guidance.
 
-67. [Searching for A Robust Neural Architecture in Four GPU Hours, by Xuanyi Dong and Yi Yang in CVPR 2019](https://xuanyidong.com/publication/cvpr-2019-gradient-based-diff-sampler/)
+67. [Path-Level Network Transformation for Efficient Architecture Search, by Han Cai, Song Han et al. in ICML 2018](http://proceedings.mlr.press/v80/cai18a/cai18a.pdf): it extends layer-wise network transformation to more advanced multi-branch network structure. It introduces branch split and emerge operations, which expoits REINFORCE algorithm to sample and train.
 
-68. [Understanding and Simplifying One-Shot Architecture Search, by Gabriel Bender et al. in ICML 2018](http://proceedings.mlr.press/v80/bender18a/bender18a.pdf): it combines a set of candidate architectures using weight sharing and trained by regularisation.
+68. [Searching for A Robust Neural Architecture in Four GPU Hours, by Xuanyi Dong and Yi Yang in CVPR 2019](https://xuanyidong.com/publication/cvpr-2019-gradient-based-diff-sampler/)
 
-69. [ProxylessNAS: Direct Neural Architecture Search on Target Task and Hardware, by Han Cai et al. in ICLR 2019](https://openreview.net/pdf?id=HylVB3AqYm)：like one-shot architecture search, it also employs an ``cumbersome'' over-parameterised network that are composed of a set of potential architectures, but uses binary connect to determine which one to use in evaluation as well as path-level pruning. The network is trained by gradient, instead of a meta-controller.
+69. [Understanding and Simplifying One-Shot Architecture Search, by Gabriel Bender et al. in ICML 2018](http://proceedings.mlr.press/v80/bender18a/bender18a.pdf): it combines a set of candidate architectures using weight sharing and trained by regularisation.
+
+70. [ProxylessNAS: Direct Neural Architecture Search on Target Task and Hardware, by Han Cai et al. in ICLR 2019](https://openreview.net/pdf?id=HylVB3AqYm)：like one-shot architecture search, it also employs an ``cumbersome'' over-parameterised network that are composed of a set of potential architectures, but uses binary connect to determine which one to use in evaluation as well as path-level pruning. The network is trained by gradient, instead of a meta-controller.
 
     $E_{((s,a)_{t=0}^{T})_{\tau=1}^{N}}[R(s_t, a_t)] = E_{\tau=1}^{N}[\sum_{t=0}^{T} R(s_t, a_t) \pi_{\theta}(a_t|s_t)] ​$
 
@@ -215,25 +217,69 @@
 
     $\nabla_{\theta}E_{{x}_{\tau=1}^{N}}[R(x_{\tau})]=E_{{x}_{\tau=1}^{N}}[R(x_{\tau})\nabla_{\theta}log\pi_{\theta}(x_{\tau})]$
 
-70. [Binaryconnect: Training deep neural networks with binary weights during propagations, by Matthieu Courbariaux, Yoshua Bengio and Jean-Pierre David in NIPS 2015](https://papers.nips.cc/paper/5647-binaryconnect-training-deep-neural-networks-with-binary-weights-during-propagations) *BinaryConnect*, it binarize the weights of the neural network in both forward and backward propagation, then update the weights with gradients before binarize them again. The ingredients are noise cancellation by averaing out in SGD and regularization provided by noisy weights.
+71. [Binaryconnect: Training deep neural networks with binary weights during propagations, by Matthieu Courbariaux, Yoshua Bengio and Jean-Pierre David in NIPS 2015](https://papers.nips.cc/paper/5647-binaryconnect-training-deep-neural-networks-with-binary-weights-during-propagations) *BinaryConnect*, it binarize the weights of the neural network in both forward and backward propagation, then update the weights with gradients before binarize them again. The ingredients are noise cancellation by averaing out in SGD and regularization provided by noisy weights.
 
-71. [Graph HyperNetworks for Neural Architecture Search, by Chris Zhang et al. in ICLR 2019](https://arxiv.org/pdf/1810.05749.pdf)
+72. [Graph HyperNetworks for Neural Architecture Search, by Chris Zhang et al. in ICLR 2019](https://arxiv.org/pdf/1810.05749.pdf)
 
-72. [Efficient Multi-objective Neural Architecture Search via Lamarckian Evolution, by Thomas Elsken et al in ICLR 2019](https://arxiv.org/abs/1804.09081): *Network Morphisms operator (network transformation)*, it exploits MOEA for Neural architecture search, it generates new solutions by network morphisms, which initializes newly generated architectures with weights from similar, already trained networks to prevent training all networks from scratch. It samples newly generated architectures according to the evluation difficulty of different objectives, so as to reduce the number of networks needed to be trained. Some common priors of NAS, trivial initial network, Marco architecture a-priori, function preserving network transformation, weights generation/transfering, performance prediction, 
+73. [Efficient Multi-objective Neural Architecture Search via Lamarckian Evolution, by Thomas Elsken et al in ICLR 2019](https://arxiv.org/abs/1804.09081): *Network Morphisms operator (network transformation)*, it exploits MOEA for Neural architecture search, it generates new solutions by network morphisms, which initializes newly generated architectures with weights from similar, already trained networks to prevent training all networks from scratch. It samples newly generated architectures according to the evluation difficulty of different objectives, so as to reduce the number of networks needed to be trained. Some common priors of NAS, trivial initial network, Marco architecture a-priori, function preserving network transformation, weights generation/transfering, performance prediction, 
 
-73. [Regularized Evolution for Image Classifier Architecture Search, by Esteban Rea et al. in AAAI 2019](https://arxiv.org/pdf/1802.01548.pdf)
+74. [Regularized Evolution for Image Classifier Architecture Search, by Esteban Rea et al. in AAAI 2019](https://arxiv.org/pdf/1802.01548.pdf)
 
-74. [Partial Order Pruning: for Best Speed/Accuracy Trade-off in Neural Architecture Search, by Xin Li et al. in CVPR 2019](https://arxiv.org/pdf/1903.03777.pdf): it propose to exploit random search with pruning to find useful trade-off between accuracy and latency. It assumes the latency and accuracy of a network keeps partial order and prunes networks that are less likely to yield better accuracy or lower latency. it's not clear how to cut the prune set from the candidate set and how it works in its early stage.
+75. [Partial Order Pruning: for Best Speed/Accuracy Trade-off in Neural Architecture Search, by Xin Li et al. in CVPR 2019](https://arxiv.org/pdf/1903.03777.pdf): it propose to exploit random search with pruning to find useful trade-off between accuracy and latency. It assumes the latency and accuracy of a network keeps partial order and prunes networks that are less likely to yield better accuracy or lower latency. it's not clear how to cut the prune set from the candidate set and how it works in its early stage.
 
-75. [SNAS: stochastic neural architecture search, by Sirui Xie et al. in ICLR 2019](https://openreview.net/pdf?id=rylqooRqK7): It proves its equivalence to MDP architecture samping in ENAS by unrolling, and proves better unbiased analytical results than DARTS due to the uncombined operations in training. It shows the resource contraints like FLOPs, parameter size, MAC are complementary to distinguish skips, pooling, and none. It uses Gumble softmax for each posible connection in a cell, with efficient unbiased simultaneous training of weights and architectures, and explicit credit assignment.
+76. [SNAS: stochastic neural architecture search, by Sirui Xie et al. in ICLR 2019](https://openreview.net/pdf?id=rylqooRqK7): It proves its equivalence to MDP architecture samping in ENAS by unrolling, and proves better unbiased analytical results than DARTS due to the uncombined operations in training. It shows the resource contraints like FLOPs, parameter size, MAC are complementary to distinguish skips, pooling, and none. It uses Gumble softmax for each posible connection in a cell, with efficient unbiased simultaneous training of weights and architectures, and explicit credit assignment.
 
-76. [FBNet: Hardware-Aware Efficient ConvNet Design via Differentiable Neural Architecture Search, by BIchen Wu et al. in CVPR 2019](https://arxiv.org/abs/1812.03443):*Differentiable Gumble Softmax*, it directly search in a layered manner instead of cell structure. Like DARTS, it assigns sampling probabiliteis to a set of operations based on Gumbel Softmax, which is differentiable. The optimization alternates between optimising network parameters and architecture sampling parameters. It considers the lantency which is non-differentiable objective by selecting with Gumble softmax probability and a lookup table recording the lantency of each operation.
+77. [FBNet: Hardware-Aware Efficient ConvNet Design via Differentiable Neural Architecture Search, by BIchen Wu et al. in CVPR 2019](https://arxiv.org/abs/1812.03443):*Differentiable Gumble Softmax*, it directly search in a layered manner instead of cell structure. Like DARTS, it assigns sampling probabiliteis to a set of operations based on Gumbel Softmax, which is differentiable. The optimization alternates between optimising network parameters and architecture sampling parameters. It considers the lantency which is non-differentiable objective by selecting with Gumble softmax probability and a lookup table recording the lantency of each operation.
 
-77. [Reinforced Evolutionary Neural Architecture Search, by Yukang Chen et al. in CVPR 2019](https://arxiv.org/abs/1808.00193)：*parameter inherit in EA*, Within a fixed framework for generating a network by stacking cells, it utilizes a reinforced learning controller, which receives the LSTM encoding of the two inputs, two operations of a block, and outputs a sampling probability among the inputs and operations. Then decision for mutating the inputs or operation is taken. There are 2B mutation actions for a cell with B blocks.
+78. [Reinforced Evolutionary Neural Architecture Search, by Yukang Chen et al. in CVPR 2019](https://arxiv.org/abs/1808.00193)：*parameter inherit in EA*, Within a fixed framework for generating a network by stacking cells, it utilizes a reinforced learning controller, which receives the LSTM encoding of the two inputs, two operations of a block, and outputs a sampling probability among the inputs and operations. Then decision for mutating the inputs or operation is taken. There are 2B mutation actions for a cell with B blocks.
 
-78. [Searching for A Robust Neural Architecture in Four GPU Hours, by Xuanyi Dong et al. in CVPR 2018](<https://xuanyidong.com/publication/cvpr-2019-gradient-based-diff-sampler/>): *cell, differentiable NAS
+79. [Searching for A Robust Neural Architecture in Four GPU Hours, by Xuanyi Dong et al. in CVPR 2018](<https://xuanyidong.com/publication/cvpr-2019-gradient-based-diff-sampler/>): *cell, differentiable NAS
 
-    
+80. [Auto-DeepLab: Hierarchical Neural Architecture Search for Semantic Image Segmentation, by Chenxi Liu et al arXiv 2019](<https://arxiv.org/abs/1901.02985>)
+
+    ------
+
+    RNN NAS
+
+    ------
+
+81. [Hidden-Unit Conditional Random Field, by Laurens van der Maaten et al. in AISTATS 2011](<https://lvdmaaten.github.io/publications/papers/AISTATS_2011a.pdf>)
+
+82. [Estimating or Propagating Gradients Through Stochastic Neurons for Conditional Computation, by Yoshua Bengio et al. in arXiv 2013](<https://arxiv.org/pdf/1308.3432.pdf>): It  introduces how to calculate the gradients of non-differentiable functions
+
+83. [Independently Controllable Factors, by Emmanuel Bengio et al. in arXiv 2017](<https://arxiv.org/pdf/1708.01289.pdf>): *disentangled representation in RL environment*
+
+84. [Disentangling the independently controllable factors of variation by interacting with the world, by Emmanuel Bengio et al. in NIPS 2017](<https://arxiv.org/pdf/1802.09484.pdf>)
+
+85. [Stochastic Gradient Estimation With Finite Differences, by Lars Buesing et al. in NIPS 2016](<http://thphn.com/papers/FDSF.pdf>)
+
+86. [PathNet: Evolution Channels Gradient Descent in Super Neural Networks, by Chrisantha Fernando et al. in arXiv 2017](<https://arxiv.org/pdf/1701.08734.pdf>): Differentiable NAS searches the connection and operations among a set of consecutive layers. PathNet searches the operations at each layer.
+
+87. [Block-Sparse Recurrent Neural Networks, by Sharan Narang et al. in arXiv 2017](<https://openreview.net/pdf?id=HJaDJZ-0W>): *block-wise sparse RNN*
+
+88. [Learning Hierarchical Information Flow with Recurrent Neural Modules, by Danijar Hafner et al. in NIPS 2017](<https://papers.nips.cc/paper/7249-learning-hierarchical-information-flow-with-recurrent-neural-modules.pdf>): it has a central router and four computational networks.  At each time step, a new input is processed by an input network, an ouput is generated by output network. And the networks get state from the router center and return the updated state to the router. It uses attention to update the hidden state of mixture of experts.
+
+89. [A Closer Look at Memorization in Deep Networks, by Yoshua Bengio et al. in ICML 2017](<https://arxiv.org/pdf/1706.05394.pdf>): **
+
+90. [Variable Computation in Recurrent Neural Networks, by Yacine Jernite et al, in ICLR 2017](https://arxiv.org/abs/1611.06188): restricting inputs of nodes. It utilizes a linear classifier to choose a subset of first several hidden nodes to update, so that the network update frequency varies according to the variability of inputs.
+
+91. [Skip RNN: Learning to Skip State Updates in Recurrent Neural Networks, by Víctor Campos et al. in ICLR 2018](<https://openreview.net/forum?id=HkwVAXyCW>): restricting inputs of nodes. it shortens the computational graph of RNN by learning to skip state updates of some hidden nodes. 
+
+92. [Independently Recurrent Neural Network (IndRNN): Building A Longer and Deeper RNN, by Shuai Li et al. in CVPR 2018](<https://arxiv.org/pdf/1803.04831.pdf>)
+
+93. [Backprop-Q: Generalized Backpropagation for Stochastic Computation Graphs, by Xiaoran Xu et al. in NIPS 2018](<https://xiaoranxu.com/files/backprop_q_Xu.pdf>):*stochastic computational graph*
+
+94. [Dynamical Isometry and a Mean Field Theory of RNNs: Gating Enables Signal Propagation in Recurrent Neural Networks, by Minmin Chen et al. in arXiv 2018](<https://arxiv.org/pdf/1806.05394.pdf>)
+
+95. [Straight-Through Estimator as Projected Wasserstein Gradient Flow, by Pengyu Cheng et al. in NIPS 2018](<http://bayesiandeeplearning.org/2018/papers/53.pdf>)
+
+96. 
+
+97. [Conditional Computation in Neural Networks for faster models, by Emmanuel Bengio et al. in arXiv 2015](<https://arxiv.org/abs/1511.06297>): *Policy gradient for sigmoid-bernolli actions*, [Code](<https://github.com/bengioe/condnet>)
+
+98. [Understanding Straight-Through Estimator in Training Activation Quantized Neural Nets, by Penghang Yin et al. in ICLR 2019](<https://openreview.net/forum?id=Skh4jRcKQ>)
+
+99. [Soft Conditional Computation, by Brandon Yang et al in arXiv 2019](<https://arxiv.org/abs/1904.04971>):*conditional computation*
 
     ------
 
@@ -243,25 +289,32 @@
 
     
 
-79. [A reinforcement learning algorithm for neural networks with incremental learning ability, by Naoto Shiraga et al. in ICONIP 2002](<http://www2.kobe-u.ac.jp/~ozawasei/pub/iconip02a.pdf>)
+100. [Value Iteration Networks, by Aviv Tamar et al. in NIPS 2016](<https://papers.nips.cc/paper/6046-value-iteration-networks.pdf>)
 
-80. [Value Iteration Networks, by Aviv Tamar et al. in NIPS 2016](<https://papers.nips.cc/paper/6046-value-iteration-networks.pdf>)
+101. [How to Discount Deep Reinforcement Learning: Towards New Dynamic Strategies, by Vincent François-Lavet et al. in arXiv 2016](<https://arxiv.org/pdf/1512.02011.pdf>): *discount fator hyperparameter*, ``In the reinforcement learning setting, an equivalence with the
+     model complexity of the learning method may be seen in the policy class complexity. Specifically, in the context of online neural fitted reinforcement learning, the discount factor as well as the neural network architecture control the number of possible policies''. It empirically analyses the influence of hyper parameters like discount factor and learning rate in DQN.
 
-81. [How to Discount Deep Reinforcement Learning: Towards New Dynamic Strategies, by Vincent François-Lavet et al. in arXiv 2016](<https://arxiv.org/pdf/1512.02011.pdf>): *discount fator hyperparameter*
+102. [**Dueling Network Architectures for Deep Reinforcement Learning**, by Ziyu Wang et al. in ICML 2017](<http://proceedings.mlr.press/v48/wangf16.pdf>): *dueling architecture*, it separates the state value estimation and action advantage estimation, while sharing a common feature learning module.
 
-82. [**Dueling Network Architectures for Deep Reinforcement Learning**, by Ziyu Wang et al. in ICML 2017](<http://proceedings.mlr.press/v48/wangf16.pdf>): *dueling architecture*, it separates the state value estimation and action advantage estimation, while sharing a common feature learning module.
+103. [Thinking Fast and Slow with Deep Learning and Tree Search, by Thomas Anthony et al. in NIPS 2017](<https://papers.nips.cc/paper/7120-thinking-fast-and-slow-with-deep-learning-and-tree-search>): *imitation learning with feedback*. It exploits the MCTS to train a neural network with imitation learning, and further uses the trained network to improve the MCTS planning.
 
-83. [Thinking Fast and Slow with Deep Learning and Tree Search, by Thomas Anthony et al. in NIPS 2017](<https://papers.nips.cc/paper/7120-thinking-fast-and-slow-with-deep-learning-and-tree-search>)
+104. [Learning to Search with MCTSnets, by David Silver et al. in ICML 2018](<https://arxiv.org/pdf/1802.04697.pdf>) *Monte Carlo Tree Search network*, it learns the behaviro of MCTS search by maintaining a tree-structured memory and recurrent update.
 
-84. [Learning to Search with MCTSnets, by David Silver et al. in ICML 2018](<https://arxiv.org/pdf/1802.04697.pdf>) *Monte Carlo Tree Search network*
+105. [AlphaX: eXploring Neural Architectures with Deep Neural Networks and Monte Carlo Tree Search, by Linnan Wang et al. in arXiv 2018](<https://arxiv.org/pdf/1805.07440.pdf>)
 
-85. [AlphaX: eXploring Neural Architectures with Deep Neural Networks and Monte Carlo Tree Search, by Linnan Wang et al. in arXiv 2018](<https://arxiv.org/pdf/1805.07440.pdf>)
+106. [Online Feature Selection for Model-based Reinforcement Learning, by Trung Thanh Nguyen et al. in ICML 2013](<http://proceedings.mlr.press/v28/nguyen13.pdf>): it proposes to use LASSO regularized sparse learning logistic regression to model the environment state changes and return the transition model.
 
-86. [Reinforcement Learning for Improving Agent Design, by David Ha ](https://arxiv.org/abs/1810.03779)
+107. [Memoryless policies: theoretical limitations and practical results, by Michael L. Littman in 1994](<https://pdfs.semanticscholar.org/1a2b/2f07e3c142b2161ff228a7f41f980ff7cc67.pdf>): *1-bit memory is optimal for maze environment*
 
-87. [Joint optimization of robot design and motion parameters using the implicit function theorem]()
+108. [FeUdal Networks for Hierarchical Reinforcement Learning, by Alexander Sasha Vezhnevets et al. in arXiv 2017](<https://arxiv.org/abs/1703.01161>)
 
-88. [Computational co-optimization of design parameters and motion trajectories for robotic systems]()
+109. [Stochastic Neural Networks for Hierarchical Reinforcement Learning, by Carlos Florensa et al. in ICLR 2017](<https://openreview.net/forum?id=B1oK8aoxe>)
+
+110. [Reinforcement Learning for Improving Agent Design, by David Ha ](https://arxiv.org/abs/1810.03779)
+
+111. [Joint optimization of robot design and motion parameters using the implicit function theorem]()
+
+112. [Computational co-optimization of design parameters and motion trajectories for robotic systems]()
 
 
 
