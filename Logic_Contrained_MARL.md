@@ -6,7 +6,9 @@
 
 ### Project:  Temporal Logic Constrained MARL
 
-#### Problem definition: 
+#### Problem definition： 
+
+Slides is [here](https://docs.google.com/presentation/d/16UZpW0PSG4tcUDsLJZgUty8KBgszZabfljHEt3JhaTI/edit?usp=sharing)
 
 Multi-agent model-free RL usually samples data from interactions or memory buffer to improve the policy. Due to uncontrollable data sampling, this regime is generally inefficient. We ask if we could synthesis the logic from the game rule depicted by [Game Description Language](<http://games.stanford.edu/games/gdl.html>) and use that strategic logic to guide the update of the policy.
 
