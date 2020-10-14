@@ -5,7 +5,7 @@
 
 Long short-term memory (LSTM) network is an appealing and powerful Recurrent neural network (RNN) paradigm. LSTM mitigates the gradient vanishing and exploding problems when training RNNs. This is achieved by replacing the original nonlinear hidden units with a linear cell unit, and additional three gates, i.e. the forget gate, the input gate and the output gate, which are parallel filters.
 
-The linear cell state is the main information flow.The purple line in the above figure illustrates the forget gate. It decides how much information should be forget from the last cell state. The sigmoid activation function is used here because the output range is [0,1], which scales the information.
+The linear cell state is the main information flow.The purple line in the above figure illustrates the forget gate. It decides how much information should be forgot from the last cell state. The sigmoid activation function is used here because the output range is [0,1], which scales the information.
 <!--f_{t}=\sigma (W_{f}[h(t-1),x(t)] +b_{f})-->
 <a href="https://www.codecogs.com/eqnedit.php?latex=f_{t}=\sigma&space;(W_{f}[h(t-1),x(t)]&space;&plus;b_{f})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f_{t}=\sigma&space;(W_{f}[h(t-1),x(t)]&space;&plus;b_{f})" title="f_{t}=\sigma (W_{f}[h(t-1),x(t)] +b_{f})" /></a>
 
