@@ -4,10 +4,10 @@ This manuscript is to analyze what will happen when the Pareto front is non-conv
 ![equation](http://latex.codecogs.com/gif.latex?\frac{5+4+(2-3-(6+\frac{4}{5}))}{3(6-2)(2-7)})
 
 * A concave Pareto front(The blue points are the found Pareto solutions, the yellow points are the true Pareto solutions)：
-![](https://github.com/Scott-Alex/Concave-Pareto-Front/blob/master/covave1.png)
+![](https://github.com/ZhichenML/LifePlan/blob/master/Recording/Concave-Pareto-Front/covave1.png)
 
 * A convex Pareto front：
-![](https://github.com/Scott-Alex/Concave-Pareto-Front/blob/master/convex2.png)
+![](https://github.com/ZhichenML/LifePlan/blob/master/Recording/Concave-Pareto-Front/convex2.png)
 
 * Conclusion: weighted aggregation cannot find solutions on the concave Pareto front.
 
