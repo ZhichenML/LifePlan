@@ -1,0 +1,42 @@
+# Awesome Continual Learning 
+
+1. Continual Learning in Task-Oriented Dialogue Systems, Zhaojiang Lin et al.
+
+   <img src="/Users/banma-74089/Library/Application Support/typora-user-images/image-20210630102321929.png" alt="image-20210630102321929" style="zoom:25%;" />
+
+   Four tasks are considered, namely intent recognition, dialogue state tracking, natural language generation, and End-to-End.
+
+   <img src="/Users/banma-74089/Library/Application Support/typora-user-images/image-20210630105035768.png" alt="image-20210630105035768" style="zoom:25%;" />
+
+   The authors process 
+
+2. Lamol: Language modeling for lifelong language learning, Fan-Keng Sun et al. in ICLR 2019, 
+
+   > ref[1] architectural methods are usually not considered as a baseline, especially in seq-2-seq generation tasks, because they usually require a further step during testing for selecting which parameter to use for the given task.
+
+3. Supermasks in superposition, Mitchell Wortsman et al. in NIPS2020
+
+4. Parameter-efficient transfer learning for nlp, ICML 2019
+
+5. Autoencoders, minimum description length and helmholtz free energy, Hinton et al. NIPS1994
+
+6. Uncertainty-based Continual Learning with Adaptive Regularization, nips 2019
+
+# Continual Reinforcement Learning 
+
+1. Sites: [CONTINUAL REINFORCEMENT LEARNING](https://sites.google.com/view/continual-rl/home)
+
+# Generalization Bound and Forgetting Bound
+
+1. Understanding the Role of Training Regimes in Continual Learning, Seyed Iman Mirzadeh et al. NIPS 2020
+
+2. GENERALISATION GUARANTEES FOR CONTINUAL LEARNING WITH ORTHOGONAL GRADIENT DESCENT
+3. Certifying Some Distributional Robustness with Principled Adversarial Training
+
+
+
+# Multi objective continual learning 
+
+1. Bi-Objective Continual Learning: Learning ‘New’ While Consolidating ‘Known’, AAAI 2020
+
+   is data distribution change a reason causing concave pareto front?
